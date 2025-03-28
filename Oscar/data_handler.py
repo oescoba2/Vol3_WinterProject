@@ -86,6 +86,10 @@ class PhilDataGetter():
         elif (num_regions != 1) and (num_markets != 1) and (num_products != 1):
             df = df.drop(labels=['Date'], axis=1)  
 
+        if write_to_csv:
+            print(f'Exporting merged dataframe to path: {path_to_file}')
+            df.to_csv(path_to_file, date_format='%Y-%m-%d', index=True, index_label='Date')
+
         return df
 
     def get_market_data(self, target_markets:str|list[str], target_products:str|list[str],
@@ -130,22 +134,31 @@ class PhilDataGetter():
         elif (num_markets != 1) and (num_products != 1):
             df = df.drop(labels=['Date', 'Region'], axis=1)
 
+        if write_to_csv:
+            print(f'Exporting merged dataframe to path: {path_to_file}')
+            df.to_csv(path_to_file, date_format='%Y-%m-%d', index=True, index_label='Date')
+
         return df
     
-def merger(dataframes:list[pd.DataFrame], cols_to_drop:dict[int:list[str]|None]=None, 
-           date_range:tuple[str, str]=('2007-01-01', '2022-12-01'), 
+def merger(dfs:list[pd.DataFrame], date_range:tuple[str, str]=('2007-01-01', '2022-12-01'),
+           cols_to_drop:dict[int:list[str]|None]=None, cols_to_rename:dict[int:dict[str:str]|None]=None, 
             write_to_csv:bool=False, path_to_file:str='./Data/PHL_data.csv') -> pd.DataFrame:
     """Merge any given time series data (in pd.DataFrame)  along a given date range into one dataframe
     whose time series frequency is 'MS' (i.e. month start).
     
     Parameters:
-        - dataframes (list) : the dataframes to merge.
+        - dfs (list) : the dataframes to merge.
         - cols_to_drop (dict or None) : a dictionary comprising of integer keys and lists of string 
-                                        elements (or None) as the values, where key k denotes data_path[k] 
+                                        elements (or None) as the values, where key k denotes dfs[k] 
                                         and the value is a list of labels of the columns that must be dropped 
-                                        from data_path[k] along axis 1. If the value of data_path[k] is None, 
-                                        no columns are dropped. This parameter is defaulted to None which 
-                                        denotes no columns are dropped from any of the datasets.
+                                        from dfs[k] along axis 1. If the value of dfs[k] is None, no columns
+                                        are dropped. This parameter is defaulted to None which denotes no 
+                                        columns are dropped from any of the datasets.
+        - cols_to_rename (dict or None) : a dictionary comprising of integer keys and dictionaries as keys (or None).
+                                          Key k denotes dfs[k] and the value contains a dict whose keys are the string
+                                          names of the columns that needs to be renamed and the values are the new names
+                                          of those columns. If the value of dfs[k] is None, no columns are renamed.
+                                          This parameter is defaulted to None.
         - date_range (tuple) : a tuple comprised of two strings where the first denotes the starting date and 
                                the last the ending date with which to index the merged dataframe with. Defaulted to 
                                ('2007-01-01', '2022-12-01').
@@ -159,20 +172,32 @@ def merger(dataframes:list[pd.DataFrame], cols_to_drop:dict[int:list[str]|None]=
 
     time_freq = 'MS'                                                                 # Monthly Start
     dates = pd.date_range(start=date_range[0], end=date_range[1], freq=time_freq)
-    dfs = []
+    dataframes = []
 
     if cols_to_drop is None:
-        cols_to_drop = {j:None for j in range(len(dataframes))}
+        cols_to_drop = {j:None for j in range(len(dfs))}
 
-    for i, df in enumerate(dataframes):
+    if cols_to_rename is None:
+        cols_to_rename = {j:None for j in range(len(dfs))}
 
-        df.index = pd.to_datetime(df.index)
+    for i, df in enumerate(dfs):
+
+        if not isinstance(df.index, pd.DatetimeIndex):
+            df.index = pd.to_datetime(df.index)
+
         data_freq = df.index.freq
 
         if cols_to_drop[i] is not None:
             df = df.drop(labels=cols_to_drop[i], axis=1)
+        
+        if cols_to_rename[i] is not None:
+            df = df.rename(cols_to_rename[i], axis=1)
 
         if data_freq != time_freq:
+
+            if data_freq is None:
+                freq = input(f"Enter the frequency of dataframe {i+1}")
+                df = df.asfreq(freq)
 
             # Average out Daily to Monthly
             if data_freq == 'D':
@@ -183,9 +208,9 @@ def merger(dataframes:list[pd.DataFrame], cols_to_drop:dict[int:list[str]|None]=
                 df = (df.resample(time_freq)).interpolate('linear')
 
         df = df.reindex(dates)
-        dfs += [df]
+        dataframes += [df]
 
-    merged = pd.concat(dfs, axis=1)
+    merged = pd.concat(dataframes, axis=1)
 
     if write_to_csv:
         print(f'Exporting merged dataframe to path: {path_to_file}')
