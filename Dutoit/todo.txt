@@ -1,0 +1,13 @@
+1. Get profiles from stacking periods and taking means for weather data
+
+2. Detrend price data
+
+3. Take monthly mean and variance of weather data as weather state
+
+3. scatter plot the periodic profiles of price periods against weather
+
+4. Fit some function of weather to price periods
+
+5. Use particle filtering to estimate new states 
+
+6. Increase variances, means of weather data and sample to see how the prices for food may change
