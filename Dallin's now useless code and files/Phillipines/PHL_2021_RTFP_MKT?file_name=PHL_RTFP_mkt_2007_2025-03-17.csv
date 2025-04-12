@@ -1,0 +1,2802 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Philippines - Monthly food price estimates by product and market</title>
+
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/style.css?v2023">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/custom.css?v2021">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/home.css?v03212019">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/variables.css?v07042021">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/facets.css?v062021">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/catalog-tab.css?v07052021">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/catalog-card.css?v10102021-1">
+<link rel="stylesheet" href="https://microdata.worldbank.org/themes/nada52/css/filter-action-bar.css?v14052021-3">
+
+    <script src="//code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+    var CI = {'base_url': 'https://microdata.worldbank.org/index.php'};
+
+    if (top.frames.length!=0) {
+        top.location=self.document.location;
+    }
+
+    $(document).ready(function()  {
+        /*global ajax error handler */
+        $( document ).ajaxError(function(event, jqxhr, settings, exception) {
+            if(jqxhr.status==401){
+                window.location=CI.base_url+'/auth/login/?destination=catalog/';
+            }
+            else if (jqxhr.status>=500){
+                alert(jqxhr.responseText);
+            }
+        });
+
+    }); //end-document-ready
+
+</script>
+
+
+
+</head>
+
+<body>
+
+    <!-- site header -->
+    <style>
+.site-header .navbar-light .no-logo .navbar-brand--sitename {border:0px!important;margin-left:0px}
+.site-header .navbar-light .no-logo .nada-site-title {font-size:18px;}
+</style>
+<header class="site-header">
+    
+        
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <nav class="navbar navbar-expand-md navbar-light rounded navbar-toggleable-md wb-navbar">
+
+                                                            <div class="navbar-brand">
+                        <a href="http://www.worldbank.org" class="g01v1-logo wb-logo">
+                            <img title="The World Bank Working for a World Free of Poverty" alt="The World Bank Working for a World Free of Poverty" src="https://microdata.worldbank.org/themes/nada52/images/logo-wb-header-en.svg" class="img-responsive">
+                        </a>
+                        <strong><a class="nada-sitename" href="https://microdata.worldbank.org/index.php">Microdata Library</a></strong>
+                        
+                    </div>
+                    
+
+                                                            
+
+                    <button class="navbar-toggler navbar-toggler-right collapsed wb-navbar-button-toggler" type="button" data-toggle="collapse" data-target="#containerNavbar" aria-controls="containerNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <!-- Start menus -->
+                    <!-- Start menus -->
+<div class="navbar-collapse collapse" id="containerNavbar" aria-expanded="false">
+        <ul class="navbar-nav ml-auto">
+                                            <li class="nav-item">
+                <a   class="nav-link" href="https://microdata.worldbank.org/index.php/catalog">Data Catalog</a>
+            </li>            
+                                            <li class="nav-item">
+                <a   class="nav-link" href="https://microdata.worldbank.org/index.php/collections">Collections</a>
+            </li>            
+                                            <li class="nav-item">
+                <a   class="nav-link" href="https://microdata.worldbank.org/index.php/citations">Citations</a>
+            </li>            
+                                            <li class="nav-item">
+                <a   class="nav-link" href="https://microdata.worldbank.org/index.php/terms-of-use">Terms of use</a>
+            </li>            
+                                            <li class="nav-item">
+                <a   class="nav-link" href="https://microdata.worldbank.org/index.php/about">About</a>
+            </li>            
+        
+        
+<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-user-circle fa-lg"></i>Login            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="https://microdata.worldbank.org/index.php/auth/login">Login</a>
+            </div>
+                </li>
+<!-- /row -->
+    </ul>
+
+</div>
+<!-- Close Menus -->                    <!-- Close Menus -->
+
+                </nav>
+            </div>
+
+        </div>
+        <!-- /row -->
+
+    </div>
+
+</header>
+    <!-- page body -->
+    <div class="wp-page-body container-fluid page-catalog catalog-data-dictionary-PHL_2021_RTFP_MKT">
+
+        <div class="body-content-wrap theme-nada-2">
+
+            <!--breadcrumbs -->
+            <div class="container">
+                                                    <ol class="breadcrumb wb-breadcrumb">
+                        	    <div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+           <span typeof="v:Breadcrumb">
+                		         <a href="https://microdata.worldbank.org/index.php/" rel="v:url" property="v:title">Home</a> /
+                        
+       </span>
+                  <span typeof="v:Breadcrumb">
+                		         <a href="https://microdata.worldbank.org/index.php/catalog" rel="v:url" property="v:title">Central Data Catalog</a> /
+                        
+       </span>
+                  <span typeof="v:Breadcrumb">
+                		         <a href="https://microdata.worldbank.org/index.php/catalog/FCV" rel="v:url" property="v:title">FCV</a> /
+                        
+       </span>
+                  <span typeof="v:Breadcrumb">
+        	         	         <a class="active" href="https://microdata.worldbank.org/index.php/catalog/6172" rel="v:url" property="v:title">PHL_2021_RTFP_V02_M</a>
+                        
+       </span>
+               </div>
+                    </ol>
+                            </div>
+            <!-- /breadcrumbs -->
+
+            <style>
+.metadata-sidebar-container .nav .active{
+	background:#e9ecef;		
+}
+.study-metadata-page .page-header .nav-tabs .active a {
+	background: white;
+	font-weight: bold;
+	border-top: 2px solid #0071bc;
+	border-left:1px solid gainsboro;
+	border-right:1px solid gainsboro;
+}
+
+.study-info-content {
+    font-size: 14px;
+}
+
+.study-subtitle{
+	font-size:.7em;
+	margin-bottom:10px;
+}
+
+.badge-outline{
+	background:transparent;
+	color:#03a9f4;
+	border:1px solid #9e9e9e;
+}
+.study-header-right-bar span{
+	display:block;
+	margin-bottom:15px;
+}
+.study-header-right-bar{
+	font-size:14px;
+	color:gray;
+}
+.get-microdata-btn{
+	font-size:14px;
+}
+
+.link-col .badge{
+	font-size:14px;
+	font-weight:normal;
+	background:transparent;
+	border:1px solid #9E9E9E;
+	color:#03a9f4;
+}
+
+.link-col .badge:hover{
+	background:#03a9f4;
+	color:#ffffff;
+}
+
+.study-header-right-bar .stat{
+	margin-bottom:10px;
+	font-size:small;
+}
+
+.study-header-right-bar .stat .stat-label{
+	font-weight:bold;
+	text-transform:uppercase;
+}
+
+.field-metadata__table_description__ref_country .field-value,
+.field-metadata__study_desc__study_info__nation .field-value{
+	max-height:350px;
+	overflow:auto;
+}
+.field-metadata__table_description__ref_country .field-value  ::-webkit-scrollbar,
+.field-metadata__study_desc__study_info__nation .field-value ::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 7px;
+}
+
+.field-metadata__table_description__ref_country .field-value  ::-webkit-scrollbar-thumb,
+.field-metadata__study_desc__study_info__nation .field-value ::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: rgba(0, 0, 0, .5);
+  box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+}
+</style>
+
+
+<div class="page-body-full study-metadata-page">
+	<span 
+		id="dataset-metadata-info" 
+		data-repositoryid="FCV"
+		data-id="6172"
+		data-idno="PHL_2021_RTFP_v02_M"
+	></span>
+
+<div class="container-fluid page-header">
+<div class="container">
+
+
+<div class="row study-info">
+					<div class="col-md-2">
+			<div class="collection-thumb-container">
+				<a href="https://microdata.worldbank.org/index.php/catalog/FCV">
+				<img  src="https://microdata.worldbank.org/files/thumbnails/thumbnail-s617257.jpg?v=1742582080" class="mr-3 img-fluid img-thumbnail" alt="FCV" title="Fragility, Conflict and Violence"/>
+				</a>
+			</div>		
+		</div>
+	
+	<div class="col">
+		
+		<div>
+		    <h1 class="mt-0 mb-1" id="dataset-title">
+                <span>Monthly food price estimates by product and market</span>
+                                    <div class="study-subtitle">Philippines, 108 markets, 2007/01/01-2025/03/01, version 2025-03-17</div>
+                            </h1>
+            <div class="clearfix">
+		        <h6 class="sub-title float-left" id="dataset-sub-title"><span id="dataset-country">Philippines</span>, <span id="dataset-year">2007 - 2025</span></h6>
+                                <a  
+                    href="https://microdata.worldbank.org/index.php/catalog/6172/get-microdata" 
+                    class="get-microdata-btn badge badge-primary wb-text-link-uppercase float-left ml-3" 
+                    title="Get Microdata">					
+                    <span class="fa fa-download"></span>
+                    Get Microdata                </a>
+                                
+            </div>
+		</div>
+
+		<div class="row study-info-content">
+		
+            <div class="col pr-5">
+
+                <div class="row mt-4 mb-2 pb-2  border-bottom">
+                    <div class="col-md-2">
+                        Reference ID                    </div>
+                    <div class="col">
+                        <div class="study-idno">
+                            PHL_2021_RTFP_v02_M                            
+                        </div>
+                    </div>
+                </div>
+
+                		
+                                <div class="row mb-2 pb-2  border-bottom">
+                    <div class="col-md-2">
+                        Producer(s)                    </div>
+                    <div class="col">
+                        <div class="producers">
+                            Bo Pieter Johannes Andrée                        </div>
+                    </div>
+                </div>
+                                
+                
+                 
+                <div class="row  border-bottom mb-2 pb-2 mt-2">
+                    <div class="col-md-2">
+                        Collection(s)                    </div>
+                    <div class="col">
+                        <div class="collections link-col">           
+                                                            <span class="collection">
+                                    <a href="https://microdata.worldbank.org/index.php/collections/FCV">
+                                        <span class="badge badge-primary">Fragility, Conflict and Violence</span>
+                                    </a>                                    
+                                </span>
+                                                    </div>
+                    </div>
+                </div>
+                
+                <div class="row border-bottom mb-2 pb-2 mt-2">
+                    <div class="col-md-2">
+                        Metadata                    </div>
+                    <div class="col">
+                        <div class="metadata">
+                            <!--metadata-->
+                            <span class="mr-2 link-col">
+                                                                                            
+                                                                    <a class="download" href="https://microdata.worldbank.org/index.php/metadata/export/6172/ddi" title="DDI Codebook (2.5)">
+                                        <span class="badge badge-primary"> DDI/XML</span>
+                                    </a>
+                                
+                                <a class="download" href="https://microdata.worldbank.org/index.php/metadata/export/6172/json" title="JSON">
+                                    <span class="badge badge-info">JSON</span>
+                                </a>
+                            </span>	
+                            <!--end-metadata-->
+                        </div>
+                    </div>
+                </div>
+
+                
+                	    </div>
+	
+	</div>
+
+	</div>
+
+    <div class="col-md-2 border-left">
+		<!--right-->
+		<div class="study-header-right-bar">
+				<div class="stat">
+					<div class="stat-label">Created on </div>
+					<div class="stat-value">Jan 31, 2024</div>
+				</div>
+
+				<div class="stat">
+					<div class="stat-label">Last modified </div>
+					<div class="stat-value">Mar 21, 2025</div>
+				</div>
+				
+									<div class="stat">
+						<div class="stat-label">Page views </div>
+						<div class="stat-value">14663</div>
+					</div>
+				
+									<div class="stat">
+						<div class="stat-label">Downloads </div>
+						<div class="stat-value">448</div>
+					</div>				
+						</div>		
+		<!--end-right-->
+	</div>
+
+</div>
+
+
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs wb-nav-tab-space flex-wrap" role="tablist">
+								<li class="nav-item tab-description "  >
+				<a href="https://microdata.worldbank.org/index.php/catalog/6172/study-description" class="nav-link wb-nav-link wb-text-link-uppercase " role="tab"  data-id="related-materials" >Study Description</a>
+			</li>
+										<li class="nav-item tab-data_dictionary active"  >
+				<a href="https://microdata.worldbank.org/index.php/catalog/6172/data-dictionary" class="nav-link wb-nav-link wb-text-link-uppercase active" role="tab"  data-id="related-materials" >Data Description</a>
+			</li>
+												<li class="nav-item nav-item-get-microdata tab-get_microdata " >
+				<a href="https://microdata.worldbank.org/index.php/catalog/6172/get-microdata" class="nav-link wb-nav-link wb-text-link-uppercase " role="tab" data-id="related-materials" >
+					<span class="get-microdata icon-da-open"></span> Get Microdata				</a>
+			</li>                            
+												<li class="nav-item tab-related_datasets "  >
+				<a href="https://microdata.worldbank.org/index.php/catalog/6172/related-datasets" class="nav-link wb-nav-link wb-text-link-uppercase " role="tab"  data-id="related-materials" >Related datasets</a>
+			</li>
+										<li class="nav-item tab-data_api "  >
+				<a href="https://microdata.worldbank.org/index.php/catalog/6172/data-api" class="nav-link wb-nav-link wb-text-link-uppercase " role="tab"  data-id="related-materials" >Data Api</a>
+			</li>
+				
+	<!--review-->
+	</ul>
+<!-- end nav tabs -->
+</div>
+</div>
+
+
+
+<div class="container study-metadata-body-content with-right-side-bar" >
+
+
+<!-- tabs -->
+<div id="tabs" class="study-metadata ui-tabs ui-widget ui-widget-content ui-corner-all study-tabs" >	
+  
+  <div id="tabs-1" aria-labelledby="ui-id-1" class="ui-tabs-panel ui-widget-content ui-corner-bottom" role="tabpanel" >
+  	
+        <div class="tab-body-no-sidebar-x"><style>
+    .data-file-bg1 tr,.data-file-bg1 td {vertical-align: top;}
+    .data-file-bg1 .col-1{width:100px;}
+    .data-file-bg1 {margin-bottom:20px;}
+    .var-info-panel{display:none;}
+    .table-variable-list td{
+        cursor:pointer;
+    }
+    
+    .nada-list-group-item {
+        position: relative;
+        display: block;
+        padding: 10px 15px;
+        margin-bottom: -1px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-left:0px;
+        border-right:0px;
+        font-size: small;
+        border-bottom: 1px solid gainsboro;
+        word-wrap: break-word;
+        padding: 5px;
+        padding-right: 10px;
+
+    }
+
+    .nada-list-group-title{
+        font-weight:bold;
+        border-top:0px;
+    }
+
+    .variable-groups-sidebar
+    .nada-list-vgroup {
+        padding-inline-start: 0px;
+        font-size:small;
+        list-style-type: none;
+    }
+
+    .nada-list-vgroup {
+        list-style-type: none;
+    }
+
+    .nada-list-subgroup{
+        padding-left:10px;
+    }
+    
+    .table-variable-list .var-breadcrumb{
+        display:none;
+    }
+
+    .nada-list-subgroup .nada-list-vgroup-item {
+        padding-left: 24px;
+        position: relative;
+        list-style:none;
+    }
+
+    .nada-list-subgroup .nada-list-vgroup-item:before {
+        position: absolute;
+        font-family: 'FontAwesome';
+        top: 0;
+        left: 10px;
+        content: "\f105";
+    }
+
+    .var-id {
+        word-break: break-word!important;
+        overflow-wrap: break-word!important;
+    }
+
+</style>
+
+<div class="row">
+
+    <div class="col-sm-2 col-md-2 col-lg-2 tab-sidebar hidden-sm-down sidebar-files">       
+
+        <form method="get" action="https://microdata.worldbank.org/index.php/catalog/6172/search" class="dictionary-search">
+        <div class="input-group input-group-sm">            
+            <input type="text" name="vk" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-outline-primary btn-sm" type="submit"><i class="fa fa-search"></i></button>
+            </span>
+        </div>
+        </form>
+        
+        <ul class="nada-list-group">
+            <li class="nada-list-group-item nada-list-group-title">Data files</li>
+                            <li class="nada-list-group-item">
+                    <a href="https://microdata.worldbank.org/index.php/catalog/6172/data-dictionary/PHL_2021_RTFP_MKT?file_name=PHL_RTFP_mkt_2007_2025-03-17.csv">PHL_RTFP_mkt_2007_2025-03-17.csv</a>
+                </li>
+                    </ul>
+
+        
+    </div>
+
+    <div class="col-sm-10 col-md-10 col-lg-10 wb-border-left tab-body body-files">
+
+        <div class="container-fluid" id="datafile-container">        
+            <h4>Data file: PHL_RTFP_mkt_2007_2025-03-17.csv</h4>
+            
+                            <p>Monthly price estimates at market/commodity level (all available countries)</p>
+                    
+            <table class="data-file-bg1">
+                                <tr>
+                    <td style="width:100px;">Cases: </td>
+                    <td>23871</td>
+                </tr>
+                                
+                                <tr>
+                    <td>Variables: </td>
+                    <td>109</td>
+                </tr>
+                
+                
+                
+            </table>
+            
+        </div>
+
+        
+        <div class="container-fluid variables-container" id="variables-container">
+            <h4>Variables</h4>
+            
+                        <div class="container-fluid table-variable-list data-dictionary ">
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="6cb46753d21e58d4dfd4619d5cc487aa" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V001?name=ISO3">ISO3</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="6cb46753d21e58d4dfd4619d5cc487aa" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V001?name=ISO3">
+                                    Country code                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-6cb46753d21e58d4dfd4619d5cc487aa">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2819cf36395e3bd2492636ccd6589f5f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V002?name=country">country</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2819cf36395e3bd2492636ccd6589f5f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V002?name=country">
+                                    Country                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2819cf36395e3bd2492636ccd6589f5f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="511f7ca05549edfb3a5f8bc56e649bfe" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V003?name=adm1_name">adm1_name</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="511f7ca05549edfb3a5f8bc56e649bfe" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V003?name=adm1_name">
+                                    Area name (admin. level 1)                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-511f7ca05549edfb3a5f8bc56e649bfe">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="d6621d78c4979fb88aa994a6386e69a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V004?name=adm2_name">adm2_name</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="d6621d78c4979fb88aa994a6386e69a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V004?name=adm2_name">
+                                    Area name (admin. level 2)                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-d6621d78c4979fb88aa994a6386e69a2">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="ef5924a30faf8ab2154683385d295d5c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V005?name=mkt_name">mkt_name</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="ef5924a30faf8ab2154683385d295d5c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V005?name=mkt_name">
+                                    Market name                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-ef5924a30faf8ab2154683385d295d5c">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="d5999ea99c5f87e435d50c95e559f1b8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V006?name=lat">lat</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="d5999ea99c5f87e435d50c95e559f1b8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V006?name=lat">
+                                    Latitude                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-d5999ea99c5f87e435d50c95e559f1b8">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1a01807eec73d332017f4fb45f44f5c4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V007?name=lon">lon</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1a01807eec73d332017f4fb45f44f5c4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V007?name=lon">
+                                    Longitude                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1a01807eec73d332017f4fb45f44f5c4">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="0485d7bb6ebba57e275d5571a2520f26" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V008?name=geo_id">geo_id</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="0485d7bb6ebba57e275d5571a2520f26" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V008?name=geo_id">
+                                    Market location identifier                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-0485d7bb6ebba57e275d5571a2520f26">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2d870950e695609ab201bef58cae1f0e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V009?name=year">year</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2d870950e695609ab201bef58cae1f0e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V009?name=year">
+                                    Year                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2d870950e695609ab201bef58cae1f0e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="a20dbd9e0648e8ac14d756e396c42d0a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V010?name=month">month</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="a20dbd9e0648e8ac14d756e396c42d0a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V010?name=month">
+                                    Month                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-a20dbd9e0648e8ac14d756e396c42d0a">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="49ed6f139700baf8a2694f4eb5b9f2ae" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V011?name=currency">currency</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="49ed6f139700baf8a2694f4eb5b9f2ae" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V011?name=currency">
+                                    Currency                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-49ed6f139700baf8a2694f4eb5b9f2ae">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="633ff5ec9536609a34da691c42cfeee8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V012?name=components">components</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="633ff5ec9536609a34da691c42cfeee8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V012?name=components">
+                                    Components                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-633ff5ec9536609a34da691c42cfeee8">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="56c708bef177a18626a1ce6e3982dd8e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V013?name=start_dense_data">start_dense_data</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="56c708bef177a18626a1ce6e3982dd8e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V013?name=start_dense_data">
+                                    Start dense data                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-56c708bef177a18626a1ce6e3982dd8e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="062d1257c8353842bcb70a2c73f174fe" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V014?name=last_survey_point">last_survey_point</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="062d1257c8353842bcb70a2c73f174fe" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V014?name=last_survey_point">
+                                    Last survey point                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-062d1257c8353842bcb70a2c73f174fe">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="eaad8ab21d3e496f4c6a35647cb34e79" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V015?name=data_coverage">data_coverage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="eaad8ab21d3e496f4c6a35647cb34e79" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V015?name=data_coverage">
+                                    Data coverage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-eaad8ab21d3e496f4c6a35647cb34e79">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="4e7f99d84feba50c68a07aa3fdd193a9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V016?name=data_coverage_recent">data_coverage_recent</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="4e7f99d84feba50c68a07aa3fdd193a9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V016?name=data_coverage_recent">
+                                    Data coverage recent                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-4e7f99d84feba50c68a07aa3fdd193a9">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="db476cb19b8badf012d32f778cb253a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V017?name=index_confidence_score">index_confidence_score</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="db476cb19b8badf012d32f778cb253a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V017?name=index_confidence_score">
+                                    Index confidence score                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-db476cb19b8badf012d32f778cb253a2">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="58b8bf75d22affb159b10890b02a226e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V018?name=spatially_interpolated">spatially_interpolated</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="58b8bf75d22affb159b10890b02a226e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V018?name=spatially_interpolated">
+                                    Spatial interpolation (0/1)                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-58b8bf75d22affb159b10890b02a226e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="f56a1fe9336754f958eab9fdb720fd8f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V019?name=beans">beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="f56a1fe9336754f958eab9fdb720fd8f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V019?name=beans">
+                                    Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-f56a1fe9336754f958eab9fdb720fd8f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1acbfaad599f7cfce92deadddd393b6b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V020?name=cabbage">cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1acbfaad599f7cfce92deadddd393b6b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V020?name=cabbage">
+                                    Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1acbfaad599f7cfce92deadddd393b6b">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="7e01e411c4a60a350dc2c3ce8f93c188" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V021?name=carrots">carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="7e01e411c4a60a350dc2c3ce8f93c188" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V021?name=carrots">
+                                    Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-7e01e411c4a60a350dc2c3ce8f93c188">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="bd73e659b8ceda92015a4efd8ff56afb" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V022?name=eggs">eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="bd73e659b8ceda92015a4efd8ff56afb" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V022?name=eggs">
+                                    Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-bd73e659b8ceda92015a4efd8ff56afb">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="8ea2f069f9a7e51d24f4e951b5e39b86" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V023?name=garlic">garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="8ea2f069f9a7e51d24f4e951b5e39b86" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V023?name=garlic">
+                                    Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-8ea2f069f9a7e51d24f4e951b5e39b86">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="955ddfa2764b3db8a44a1a996ad784f3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V024?name=meat_beef_chops">meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="955ddfa2764b3db8a44a1a996ad784f3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V024?name=meat_beef_chops">
+                                    Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-955ddfa2764b3db8a44a1a996ad784f3">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="8b2d4cdad0193b4d0f284a1afbfb673c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V025?name=meat_chicken_whole">meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="8b2d4cdad0193b4d0f284a1afbfb673c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V025?name=meat_chicken_whole">
+                                    Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-8b2d4cdad0193b4d0f284a1afbfb673c">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="a78459632219ebb3cd39f693e3162f73" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V026?name=meat_pork">meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="a78459632219ebb3cd39f693e3162f73" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V026?name=meat_pork">
+                                    Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-a78459632219ebb3cd39f693e3162f73">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="0cc869ec705f8c36ea251509d9cc86be" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V027?name=onions">onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="0cc869ec705f8c36ea251509d9cc86be" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V027?name=onions">
+                                    Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-0cc869ec705f8c36ea251509d9cc86be">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="6f6ca533cc88e61844cd1f5a4f01bd3e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V028?name=potatoes">potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="6f6ca533cc88e61844cd1f5a4f01bd3e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V028?name=potatoes">
+                                    Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-6f6ca533cc88e61844cd1f5a4f01bd3e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="0fe40849a1b1610df590a23b3c7f4868" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V029?name=rice">rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="0fe40849a1b1610df590a23b3c7f4868" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V029?name=rice">
+                                    Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-0fe40849a1b1610df590a23b3c7f4868">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="f427714b527fce729eefceeb7ab7d83d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V030?name=tomatoes">tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="f427714b527fce729eefceeb7ab7d83d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V030?name=tomatoes">
+                                    Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-f427714b527fce729eefceeb7ab7d83d">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="981ba521ff7cbf41d7dc751afa15e3d0" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V031?name=o_beans">o_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="981ba521ff7cbf41d7dc751afa15e3d0" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V031?name=o_beans">
+                                    Open estimate - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-981ba521ff7cbf41d7dc751afa15e3d0">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="935bb51f0857a37e3e1115ecec43dc0e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V032?name=h_beans">h_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="935bb51f0857a37e3e1115ecec43dc0e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V032?name=h_beans">
+                                    High estimate - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-935bb51f0857a37e3e1115ecec43dc0e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="33b239ea1b689985cff4c7c53d970aba" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V033?name=l_beans">l_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="33b239ea1b689985cff4c7c53d970aba" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V033?name=l_beans">
+                                    Low estimate - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-33b239ea1b689985cff4c7c53d970aba">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2a23eb605375178ee943d28cff9f61fb" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V034?name=c_beans">c_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2a23eb605375178ee943d28cff9f61fb" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V034?name=c_beans">
+                                    Close estimate - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2a23eb605375178ee943d28cff9f61fb">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="dafbfbda66595e994dbc61718349ceaf" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V035?name=inflation_beans">inflation_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="dafbfbda66595e994dbc61718349ceaf" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V035?name=inflation_beans">
+                                    Inflation - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-dafbfbda66595e994dbc61718349ceaf">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="3fc7d63a2282eedf3457f488e36d37f9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V036?name=trust_beans">trust_beans</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="3fc7d63a2282eedf3457f488e36d37f9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V036?name=trust_beans">
+                                    Trust - Beans                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-3fc7d63a2282eedf3457f488e36d37f9">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="e5f973b3fd40ec0cbebaba411d9f96a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V037?name=o_cabbage">o_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="e5f973b3fd40ec0cbebaba411d9f96a2" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V037?name=o_cabbage">
+                                    Open estimate - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-e5f973b3fd40ec0cbebaba411d9f96a2">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="28fb134ed9bceeea55066a3bf8234d7f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V038?name=h_cabbage">h_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="28fb134ed9bceeea55066a3bf8234d7f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V038?name=h_cabbage">
+                                    High estimate - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-28fb134ed9bceeea55066a3bf8234d7f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="e4e67df9b6e0d4e7ca1ac62a6149771c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V039?name=l_cabbage">l_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="e4e67df9b6e0d4e7ca1ac62a6149771c" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V039?name=l_cabbage">
+                                    Low estimate - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-e4e67df9b6e0d4e7ca1ac62a6149771c">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="623283426fdca0d6cd07bfdcf6f7c67d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V040?name=c_cabbage">c_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="623283426fdca0d6cd07bfdcf6f7c67d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V040?name=c_cabbage">
+                                    Close estimate - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-623283426fdca0d6cd07bfdcf6f7c67d">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="4574538578476b551ba4039f88f616b8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V041?name=inflation_cabbage">inflation_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="4574538578476b551ba4039f88f616b8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V041?name=inflation_cabbage">
+                                    Inflation - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-4574538578476b551ba4039f88f616b8">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="46cb8f5bb637e93269cef4906598cdda" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V042?name=trust_cabbage">trust_cabbage</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="46cb8f5bb637e93269cef4906598cdda" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V042?name=trust_cabbage">
+                                    Trust - Cabbage                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-46cb8f5bb637e93269cef4906598cdda">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="cd24af604b1d8c8a6c9dd3a86bb7c785" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V043?name=o_carrots">o_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="cd24af604b1d8c8a6c9dd3a86bb7c785" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V043?name=o_carrots">
+                                    Open estimate - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-cd24af604b1d8c8a6c9dd3a86bb7c785">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="311f9cd9641ba227e1dd729eff3b494d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V044?name=h_carrots">h_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="311f9cd9641ba227e1dd729eff3b494d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V044?name=h_carrots">
+                                    High estimate - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-311f9cd9641ba227e1dd729eff3b494d">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="3c6f5f58eea28c3726f42806fe0d0482" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V045?name=l_carrots">l_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="3c6f5f58eea28c3726f42806fe0d0482" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V045?name=l_carrots">
+                                    Low estimate - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-3c6f5f58eea28c3726f42806fe0d0482">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="69de2ee584ea3675d9f0ae651f79caf4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V046?name=c_carrots">c_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="69de2ee584ea3675d9f0ae651f79caf4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V046?name=c_carrots">
+                                    Close estimate - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-69de2ee584ea3675d9f0ae651f79caf4">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="784b107b3cd254f99caa2ab03125ab7b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V047?name=inflation_carrots">inflation_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="784b107b3cd254f99caa2ab03125ab7b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V047?name=inflation_carrots">
+                                    Inflation - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-784b107b3cd254f99caa2ab03125ab7b">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="39fc06d58d2414f6c65d2692125a73ba" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V048?name=trust_carrots">trust_carrots</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="39fc06d58d2414f6c65d2692125a73ba" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V048?name=trust_carrots">
+                                    Trust - Carrots                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-39fc06d58d2414f6c65d2692125a73ba">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="cc445b58ac8942aa4119b6ad176f42b5" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V049?name=o_eggs">o_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="cc445b58ac8942aa4119b6ad176f42b5" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V049?name=o_eggs">
+                                    Open estimate - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-cc445b58ac8942aa4119b6ad176f42b5">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2cbfb0383874d781e2b24b595abfde69" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V050?name=h_eggs">h_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2cbfb0383874d781e2b24b595abfde69" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V050?name=h_eggs">
+                                    High estimate - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2cbfb0383874d781e2b24b595abfde69">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="a9e929415ede55bc659f487f37959c6a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V051?name=l_eggs">l_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="a9e929415ede55bc659f487f37959c6a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V051?name=l_eggs">
+                                    Low estimate - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-a9e929415ede55bc659f487f37959c6a">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="58ff47f79508349487ac65c482839eea" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V052?name=c_eggs">c_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="58ff47f79508349487ac65c482839eea" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V052?name=c_eggs">
+                                    Close estimate - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-58ff47f79508349487ac65c482839eea">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1540e2025a58b44082e7794237124b45" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V053?name=inflation_eggs">inflation_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1540e2025a58b44082e7794237124b45" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V053?name=inflation_eggs">
+                                    Inflation - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1540e2025a58b44082e7794237124b45">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1a416dc8a4e5bac38adafe1399817be4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V054?name=trust_eggs">trust_eggs</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1a416dc8a4e5bac38adafe1399817be4" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V054?name=trust_eggs">
+                                    Trust - Eggs                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1a416dc8a4e5bac38adafe1399817be4">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="8df23b6edae434678104143ea0d0ed96" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V055?name=o_garlic">o_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="8df23b6edae434678104143ea0d0ed96" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V055?name=o_garlic">
+                                    Open estimate - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-8df23b6edae434678104143ea0d0ed96">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="f08f85ac975ab9d939366ee14fb743f3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V056?name=h_garlic">h_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="f08f85ac975ab9d939366ee14fb743f3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V056?name=h_garlic">
+                                    High estimate - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-f08f85ac975ab9d939366ee14fb743f3">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="11f72fddeab5d13d311f6c273d5b39ac" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V057?name=l_garlic">l_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="11f72fddeab5d13d311f6c273d5b39ac" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V057?name=l_garlic">
+                                    Low estimate - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-11f72fddeab5d13d311f6c273d5b39ac">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="9a6350d36cc45c2129bff7b7f84c6f43" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V058?name=c_garlic">c_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="9a6350d36cc45c2129bff7b7f84c6f43" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V058?name=c_garlic">
+                                    Close estimate - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-9a6350d36cc45c2129bff7b7f84c6f43">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="16fd17e1cff0114ec9673210e21b0757" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V059?name=inflation_garlic">inflation_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="16fd17e1cff0114ec9673210e21b0757" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V059?name=inflation_garlic">
+                                    Inflation - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-16fd17e1cff0114ec9673210e21b0757">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="b2dd43cced10237e2058899ffa81b18a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V060?name=trust_garlic">trust_garlic</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="b2dd43cced10237e2058899ffa81b18a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V060?name=trust_garlic">
+                                    Trust - Garlic                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-b2dd43cced10237e2058899ffa81b18a">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="44f3051df2e82abbbb6ff5c45af28055" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V061?name=o_meat_beef_chops">o_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="44f3051df2e82abbbb6ff5c45af28055" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V061?name=o_meat_beef_chops">
+                                    Open estimate - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-44f3051df2e82abbbb6ff5c45af28055">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="771a8784fe0529e6244e6a4592c35395" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V062?name=h_meat_beef_chops">h_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="771a8784fe0529e6244e6a4592c35395" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V062?name=h_meat_beef_chops">
+                                    High estimate - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-771a8784fe0529e6244e6a4592c35395">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="e6d1f5156ec47a8c14f4e90a9047a4a9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V063?name=l_meat_beef_chops">l_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="e6d1f5156ec47a8c14f4e90a9047a4a9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V063?name=l_meat_beef_chops">
+                                    Low estimate - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-e6d1f5156ec47a8c14f4e90a9047a4a9">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="a957fdeab9b598dcd79ea8d9f484cca9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V064?name=c_meat_beef_chops">c_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="a957fdeab9b598dcd79ea8d9f484cca9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V064?name=c_meat_beef_chops">
+                                    Close estimate - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-a957fdeab9b598dcd79ea8d9f484cca9">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="e72ddae9be466e4c0de6fbdbe6e846ed" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V065?name=inflation_meat_beef_chops">inflation_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="e72ddae9be466e4c0de6fbdbe6e846ed" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V065?name=inflation_meat_beef_chops">
+                                    Inflation - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-e72ddae9be466e4c0de6fbdbe6e846ed">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="cadd9c173741efc315c27fcfc514f1cd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V066?name=trust_meat_beef_chops">trust_meat_beef_chops</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="cadd9c173741efc315c27fcfc514f1cd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V066?name=trust_meat_beef_chops">
+                                    Trust - Meat beef chops                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-cadd9c173741efc315c27fcfc514f1cd">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="ffb6adf6b176f9a2c8245e901f808784" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V067?name=o_meat_chicken_whole">o_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="ffb6adf6b176f9a2c8245e901f808784" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V067?name=o_meat_chicken_whole">
+                                    Open estimate - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-ffb6adf6b176f9a2c8245e901f808784">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="7bb58eed7a47d707bdc6a216401bebe6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V068?name=h_meat_chicken_whole">h_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="7bb58eed7a47d707bdc6a216401bebe6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V068?name=h_meat_chicken_whole">
+                                    High estimate - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-7bb58eed7a47d707bdc6a216401bebe6">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2f3e3f097af58745ddc385972ab36d90" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V069?name=l_meat_chicken_whole">l_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2f3e3f097af58745ddc385972ab36d90" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V069?name=l_meat_chicken_whole">
+                                    Low estimate - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2f3e3f097af58745ddc385972ab36d90">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="0898117d8756498a2a15f8d7189e9380" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V070?name=c_meat_chicken_whole">c_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="0898117d8756498a2a15f8d7189e9380" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V070?name=c_meat_chicken_whole">
+                                    Close estimate - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-0898117d8756498a2a15f8d7189e9380">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="facb33c3895ac18d4840073e8ec97872" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V071?name=inflation_meat_chicken_whole">inflation_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="facb33c3895ac18d4840073e8ec97872" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V071?name=inflation_meat_chicken_whole">
+                                    Inflation - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-facb33c3895ac18d4840073e8ec97872">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="b08bbc5cd2ae83d6efa6f8658bd66e6a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V072?name=trust_meat_chicken_whole">trust_meat_chicken_whole</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="b08bbc5cd2ae83d6efa6f8658bd66e6a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V072?name=trust_meat_chicken_whole">
+                                    Trust - Meat chicken whole                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-b08bbc5cd2ae83d6efa6f8658bd66e6a">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="d1baad6f933f2f777c3ce16bb24cf81f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V073?name=o_meat_pork">o_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="d1baad6f933f2f777c3ce16bb24cf81f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V073?name=o_meat_pork">
+                                    Open estimate - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-d1baad6f933f2f777c3ce16bb24cf81f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="24100822cf5f83b5a6e250aafde6ae51" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V074?name=h_meat_pork">h_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="24100822cf5f83b5a6e250aafde6ae51" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V074?name=h_meat_pork">
+                                    High estimate - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-24100822cf5f83b5a6e250aafde6ae51">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="c1771b95e3a41eec48237c1dcee5974f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V075?name=l_meat_pork">l_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="c1771b95e3a41eec48237c1dcee5974f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V075?name=l_meat_pork">
+                                    Low estimate - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-c1771b95e3a41eec48237c1dcee5974f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="969d376f9eeb63f29337174271128c08" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V076?name=c_meat_pork">c_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="969d376f9eeb63f29337174271128c08" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V076?name=c_meat_pork">
+                                    Close estimate - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-969d376f9eeb63f29337174271128c08">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="95e18520fc0f38d9e8167b2c91b30b88" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V077?name=inflation_meat_pork">inflation_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="95e18520fc0f38d9e8167b2c91b30b88" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V077?name=inflation_meat_pork">
+                                    Inflation - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-95e18520fc0f38d9e8167b2c91b30b88">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="bc9f9796d13a09f03986c209dd9643f1" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V078?name=trust_meat_pork">trust_meat_pork</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="bc9f9796d13a09f03986c209dd9643f1" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V078?name=trust_meat_pork">
+                                    Trust - Meat pork                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-bc9f9796d13a09f03986c209dd9643f1">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="8342c6dc0e89713d28043671c55e6af6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V079?name=o_onions">o_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="8342c6dc0e89713d28043671c55e6af6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V079?name=o_onions">
+                                    Open estimate - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-8342c6dc0e89713d28043671c55e6af6">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="c5baa566eaab06937518ffca61d75a16" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V080?name=h_onions">h_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="c5baa566eaab06937518ffca61d75a16" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V080?name=h_onions">
+                                    High estimate - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-c5baa566eaab06937518ffca61d75a16">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="6cfd4149143661e9d055f5b097db5588" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V081?name=l_onions">l_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="6cfd4149143661e9d055f5b097db5588" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V081?name=l_onions">
+                                    Low estimate - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-6cfd4149143661e9d055f5b097db5588">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="c1ca6590241f60a3a4b46ae0d032807e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V082?name=c_onions">c_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="c1ca6590241f60a3a4b46ae0d032807e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V082?name=c_onions">
+                                    Close estimate - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-c1ca6590241f60a3a4b46ae0d032807e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1c77f8f46981b525c206c6488b4a6061" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V083?name=inflation_onions">inflation_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1c77f8f46981b525c206c6488b4a6061" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V083?name=inflation_onions">
+                                    Inflation - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1c77f8f46981b525c206c6488b4a6061">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="fa2a8af6501b1c3711142289fc77de3d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V084?name=trust_onions">trust_onions</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="fa2a8af6501b1c3711142289fc77de3d" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V084?name=trust_onions">
+                                    Trust - Onions                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-fa2a8af6501b1c3711142289fc77de3d">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="5e701dca518dcf5e1eb519c29da203c3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V085?name=o_potatoes">o_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="5e701dca518dcf5e1eb519c29da203c3" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V085?name=o_potatoes">
+                                    Open estimate - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-5e701dca518dcf5e1eb519c29da203c3">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="71b994298eb33904ebf26ca7e223e686" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V086?name=h_potatoes">h_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="71b994298eb33904ebf26ca7e223e686" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V086?name=h_potatoes">
+                                    High estimate - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-71b994298eb33904ebf26ca7e223e686">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="08aa09143c542c092fad6b60547006d1" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V087?name=l_potatoes">l_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="08aa09143c542c092fad6b60547006d1" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V087?name=l_potatoes">
+                                    Low estimate - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-08aa09143c542c092fad6b60547006d1">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="922143b5865c0370f433b39fc4efbc83" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V088?name=c_potatoes">c_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="922143b5865c0370f433b39fc4efbc83" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V088?name=c_potatoes">
+                                    Close estimate - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-922143b5865c0370f433b39fc4efbc83">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="044de8944a0de4729c9509779bb00d95" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V089?name=inflation_potatoes">inflation_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="044de8944a0de4729c9509779bb00d95" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V089?name=inflation_potatoes">
+                                    Inflation - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-044de8944a0de4729c9509779bb00d95">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="22f74240be4b9aa896da95875d148bfd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V090?name=trust_potatoes">trust_potatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="22f74240be4b9aa896da95875d148bfd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V090?name=trust_potatoes">
+                                    Trust - Potatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-22f74240be4b9aa896da95875d148bfd">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2403d2f404a8ad8bed7c0ba336b01961" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V091?name=o_rice">o_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2403d2f404a8ad8bed7c0ba336b01961" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V091?name=o_rice">
+                                    Open estimate - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2403d2f404a8ad8bed7c0ba336b01961">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="0754f007d2f579c8747ae5de5d830d9f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V092?name=h_rice">h_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="0754f007d2f579c8747ae5de5d830d9f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V092?name=h_rice">
+                                    High estimate - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-0754f007d2f579c8747ae5de5d830d9f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="5cef046af589d1a1f7853917a1e05dfd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V093?name=l_rice">l_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="5cef046af589d1a1f7853917a1e05dfd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V093?name=l_rice">
+                                    Low estimate - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-5cef046af589d1a1f7853917a1e05dfd">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2a649ae90475f0d294a00c4191ec82e9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V094?name=c_rice">c_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2a649ae90475f0d294a00c4191ec82e9" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V094?name=c_rice">
+                                    Close estimate - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2a649ae90475f0d294a00c4191ec82e9">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2a3a7a9369549ff4cc5ccceff59309b5" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V095?name=inflation_rice">inflation_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2a3a7a9369549ff4cc5ccceff59309b5" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V095?name=inflation_rice">
+                                    Inflation - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2a3a7a9369549ff4cc5ccceff59309b5">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="2637c0030cc6277ff09df774e61d3a7e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V096?name=trust_rice">trust_rice</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="2637c0030cc6277ff09df774e61d3a7e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V096?name=trust_rice">
+                                    Trust - Rice                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-2637c0030cc6277ff09df774e61d3a7e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="34a0afb6c835ff9f6371cb486bbb2d9a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V097?name=o_tomatoes">o_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="34a0afb6c835ff9f6371cb486bbb2d9a" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V097?name=o_tomatoes">
+                                    Open estimate - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-34a0afb6c835ff9f6371cb486bbb2d9a">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="72c8fd1d248704cc9098bbce1b540930" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V098?name=h_tomatoes">h_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="72c8fd1d248704cc9098bbce1b540930" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V098?name=h_tomatoes">
+                                    High estimate - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-72c8fd1d248704cc9098bbce1b540930">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="906be4476fdb77fd772d935be3b01f03" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V099?name=l_tomatoes">l_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="906be4476fdb77fd772d935be3b01f03" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V099?name=l_tomatoes">
+                                    Low estimate - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-906be4476fdb77fd772d935be3b01f03">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="1f5d2defb597c51bc202fd77ed94902b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V100?name=c_tomatoes">c_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="1f5d2defb597c51bc202fd77ed94902b" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V100?name=c_tomatoes">
+                                    Close estimate - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-1f5d2defb597c51bc202fd77ed94902b">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="d6463cf8e3657fa800d57a950ba0293f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V101?name=inflation_tomatoes">inflation_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="d6463cf8e3657fa800d57a950ba0293f" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V101?name=inflation_tomatoes">
+                                    Inflation - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-d6463cf8e3657fa800d57a950ba0293f">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="7270f5348afc97ac1eeca028ae94768e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V102?name=trust_tomatoes">trust_tomatoes</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="7270f5348afc97ac1eeca028ae94768e" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V102?name=trust_tomatoes">
+                                    Trust - Tomatoes                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-7270f5348afc97ac1eeca028ae94768e">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="15b784d033b7d0c8d687a18600b462e6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V103?name=o_food_price_index">o_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="15b784d033b7d0c8d687a18600b462e6" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V103?name=o_food_price_index">
+                                    Open estimate - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-15b784d033b7d0c8d687a18600b462e6">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="d7c4f3b234cf9c86ee715aeda6051e16" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V104?name=h_food_price_index">h_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="d7c4f3b234cf9c86ee715aeda6051e16" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V104?name=h_food_price_index">
+                                    High estimate - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-d7c4f3b234cf9c86ee715aeda6051e16">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="5e81abce629128fae0ae56399249e7e7" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V105?name=l_food_price_index">l_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="5e81abce629128fae0ae56399249e7e7" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V105?name=l_food_price_index">
+                                    Low estimate - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-5e81abce629128fae0ae56399249e7e7">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="daa58178161093ad933864f65a7b16c8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V106?name=c_food_price_index">c_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="daa58178161093ad933864f65a7b16c8" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V106?name=c_food_price_index">
+                                    Close estimate - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-daa58178161093ad933864f65a7b16c8">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="aee81597a6d81f19213e5a179e027550" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V107?name=inflation_food_price_index">inflation_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="aee81597a6d81f19213e5a179e027550" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V107?name=inflation_food_price_index">
+                                    Inflation - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-aee81597a6d81f19213e5a179e027550">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="16b90a1f8aafddab796428271a31bc53" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V108?name=trust_food_price_index">trust_food_price_index</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="16b90a1f8aafddab796428271a31bc53" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V108?name=trust_food_price_index">
+                                    Trust - Food price index                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-16b90a1f8aafddab796428271a31bc53">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                                                        <div class="row var-row " >
+                    <div class="icon-toggle"><i class="collapased_ fa fa-angle-down" aria-hidden="true"></i><i class="expanded_ fa fa-angle-up" aria-hidden="true"></i></div>            
+                        <div class="col-md-3">
+                            <div class="var-td p-1">
+                            <a class="var-id text-break" id="311be15346974b3c6bfb8c0b113b28cd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V109?name=DATES">DATES</a>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="p-1 pr-3">
+                                <a class="var-id" id="311be15346974b3c6bfb8c0b113b28cd" href="https://microdata.worldbank.org/index.php/catalog/6172/variable/PHL_2021_RTFP_MKT/V109?name=DATES">
+                                    Date in yyyy-mm-dd format                                </a>
+                            </div>                            
+                        </div>                    
+                    </div>
+                    <div class="row var-info-panel" id="pnl-311be15346974b3c6bfb8c0b113b28cd">
+                        <div class="panel-td p-4"></div>
+                    </div>                
+                            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    Total: 109                </div>
+                <div class="col-md-9">
+                    <div class="pagination float-right">
+                                            </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="application/javascript">
+    $(document).ready(function () {
+
+        //show/hide variable info
+        $(document.body).on("click",".data-dictionary .var-row", function(){
+            var variable=$(this).find(".var-id");
+            if(variable){
+                get_variable(variable);
+            }
+            return false;
+        });
+
+    });
+
+    function get_variable(var_obj)
+    {
+        var i18n={
+		'js_loading':"Loading, please wait...",
+        };
+        
+        //panel id
+        var pnl="#pnl-"+var_obj.attr("id");
+        var pnl_body=$(pnl).find(".panel-td");
+
+        //collapse
+        if ($(var_obj).closest(".var-row").is(".pnl-active")){
+            $(var_obj).closest(".var-row").toggleClass("pnl-active");
+            $(pnl).hide();
+            return;
+        }
+
+        //hide any open panels
+        $('.data-dictionary .var-info-panel').hide();
+
+        //unset any active panels
+        $(".data-dictionary .var-row").removeClass("pnl-active");
+
+        //error handler
+        variable_error_handler(pnl_body);
+
+        $(pnl).show();
+        $(var_obj).closest(".var-row").toggleClass("pnl-active");
+        $(pnl_body).html('<i class="fa fa-spinner fa-pulse fa-2x fa-fw"></i> '+ i18n.js_loading);
+        $(pnl_body).load(var_obj.attr("href")+'&ajax=true', function(){
+            var fooOffset = jQuery('.pnl-active').offset(),
+                destination = fooOffset.top;
+            $('html,body').animate({scrollTop: destination-50}, 500);
+        })
+    }
+
+
+    //show/hide resource
+    function toggle_resource(element_id){
+        $("#"+element_id).toggle();
+    }
+
+    function variable_error_handler(pnl)
+    {
+        $.ajaxSetup({
+            error:function(XHR,e)	{
+                $(pnl).html('<div class="error">'+XHR.responseText+'</div>');
+            }
+        });
+    }
+
+</script></div>
+    
+	<div class="mt-5">                
+            <a class="btn btn-sm btn-secondary" href="https://microdata.worldbank.org/index.php/catalog"><i class="fas fa-arrow-circle-left"></i> Back to Catalog</a>
+        </div>
+  </div>
+</div>
+<!-- end-tabs-->    
+   </div> 
+</div>
+
+
+<!--survey summary resources-->
+<script type="text/javascript">
+	function toggle_resource(element_id){
+		$("#"+element_id).parent(".resource").toggleClass("active");
+		$("#"+element_id).toggle();
+	}
+	
+	$(document).ready(function () { 
+		bind_behaviours();
+		
+		$(".show-datafiles").click(function(){
+			$(".data-files .hidden").removeClass("hidden");
+			$(".show-datafiles").hide();
+			return false;
+		});
+
+		//setup bootstrap scrollspy
+		$("body").attr('data-spy', 'scroll');
+		$("body").attr('data-target', '#dataset-metadata-sidebar');
+		$("body").attr('data-offset', '0');
+		$("body").scrollspy('refresh');
+
+	});	
+	
+	function bind_behaviours() {
+		//show variable info by id
+		$(".resource-info").unbind('click');
+		$(".resource-info").click(function(){
+			if($(this).attr("id")!=''){
+				toggle_resource('info_'+$(this).attr("id"));
+			}
+			return false;
+		});			
+	}
+</script>        </div>
+    </div>
+
+    <!-- page footer -->
+    <footer>
+    <!-- footer top section -->
+        <!-- End footer top section -->
+    <button onclick="javascript:uvClick()" style="background: #03A9F4;position: fixed;right: 0px;border: none;padding: 5px;color: white;bottom: 10px;"> 
+        <i class="fa fa-headphones headphones-help-widget" aria-hidden="true"></i><span>Help / Feedback</span>
+    </button>
+    <script type="text/javascript" src="https://microdata.worldbank.org/themes/bootstrap4/js/uservoice.inc.js?v=202010"></script>
+
+    <!-- footer bottom section -->
+    <div class="full-row-footer-black-components">
+        <div class="container">
+            <div class="footer">
+                <div class="row">
+
+                    <!-- / WB logo and Wbg partnership -->
+                    <div class="col-12 col-md-2">
+
+                        <div class="text-center text-lg-left">
+                            <a href="http://www.worldbank.org/">
+                                <img src="https://www.worldbank.org/content/dam/wbr-redesign/logos/logo-wbg-footer-en.svg" title="The World Bank Working for a World Free of Poverty" alt="The World Bank Working for a World Free of Poverty">
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="col-12 col-md-4  footer-bottom-left">
+                        <ul class="footer-ul-links-centered">
+                            <li>
+                                <a class="wbg-partnership" title="International Bank for Reconstruction and Development" href="http://www.worldbank.org/en/who-we-are/ibrd">IBRD</a>
+                                <a class="wbg-partnership" title="International Development Association" href="http://www.worldbank.org/ida">IDA</a>
+                                <a class="wbg-partnership" title="International Finance Corporation" href="http://www.ifc.org/">IFC</a>
+                                <a class="wbg-partnership" title="Multilateral Investment Guarantee Agency" href="http://www.miga.org/">MIGA</a>
+                                <a class="wbg-partnership" title="International Centre for Settlement of Investment Disputes" href="http://icsid.worldbank.org/">ICSID</a>
+                            </li>
+
+                        </ul>
+                    </div>
+                    <!-- / WB logo and Wbg partnership -->
+
+                    <!-- Dropdown and fraud  -->
+                    <div class="col-12 col-md-6 footer-bottom-right">
+                        <div class="">
+                            <div class="footer-copy-right">
+
+                                <p class="text-center text-lg-right">
+
+                                    <small>
+                                        ©
+                                        <script language="JavaScript">
+                                            var time = new Date();
+                                            var year = time.getYear();
+                                            if (year < 2000)
+                                                year = year + 1900 + ", ";
+                                            document.write(year); // End -->
+                                        </script> The World Bank Group, All Rights Reserved.
+                                    </small>
+
+                                </p>
+
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- / dropdown and fraud  -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<style>
+.consent-text,
+.consent-text p,
+.consent-text button,
+.consent-text a
+{
+    color:white;
+}
+
+.consent-text a:link{
+    text-decoration:underline;
+}
+
+.consent-text button,
+.consent-text button:hover
+{
+    color:white;
+    position:absolute;
+    top:10px;
+    right:10px;
+}
+
+.consent-popup{
+    display:none;
+	padding:25px 10px;
+}
+</style>
+
+
+<div class="fixed-bottom consent-popup" style="background:rgba(0,0,0,0.87);">
+
+<div class="container consent-text" >
+       <p>This site uses cookies to optimize functionality and give you the best possible experience. If you continue to navigate this website beyond this page, cookies will be placed on your browser. To learn more about cookies,&nbsp;<a href="https://www.worldbank.org/en/about/legal/privacy-notice">click here</a>.</p>        
+        <button type="button" class="close consent-close" aria-label="Close" >
+            <span aria-hidden="true">&times;</span>
+        </button>
+</div>
+
+</div>
+
+
+<script>
+
+function create_cookie(name,value,days) {
+	if (days) {
+		var date = new Date();
+		date.setTime(date.getTime()+(days*24*60*60*1000));
+		var expires = "; expires="+date.toGMTString();
+	}
+	else var expires = "";
+	document.cookie = name+"="+value+expires+"; path=/";
+}
+
+function read_cookie(name) {
+	var nameEQ = name + "=";
+	var ca = document.cookie.split(';');
+	for(var i=0;i < ca.length;i++) {
+		var c = ca[i];
+		while (c.charAt(0)==' ') c = c.substring(1,c.length);
+		if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+	}
+	return null;
+}
+
+function erase_cookie(name) {
+	create_cookie(name,"",-1);
+}
+
+$(document).ready(function() {
+    var consent=read_cookie("ml_consent");
+		
+    if(consent==null || consent==''){
+        $(".consent-popup").show();
+    }
+    else{
+        $(".consent-popup").hide();
+    }
+});
+
+
+$(document.body).on("click",".consent-close", function(){ 
+    create_cookie('ml_consent',1,0);
+    $(".consent-popup").hide();
+});
+</script>    
+	<script src="//assets.adobedtm.com/572ee9d70241b5c796ae15c773eaaee4365408ec/satelliteLib-efd6120a6f6ed94da49cf49e2ba626ac110c7e3c.js"></script>
+	
+
+
+
+<script>
+	var s_repo="CENTRAL"; 				s_repo="FCV";
+	
+var wbgData = wbgData || {};
+wbgData.page={
+	pageInfo: {
+		channel: "DEC Microdata Catalog EXT",
+		pageName: 'microdata-ext:'+document.title, //(required) - unique page name
+		pageCategory: "", //home, errorPage, search results
+		pageUid: 'microdata-ext:'+document.title,
+		pageFirstPub: "",
+		pageLastMod: "",
+		author: "",
+		topicTag: "",
+		subtopicTag: "",
+		contentType: "",
+		channel: 'DEC Microdata Catalog EXT',//required
+		webpackage: s_repo //repository
+	},
+      sectionInfo: {
+          siteSection: s_repo,
+          subsectionP2: $("#dataset-metadata-info").attr("data-idno"),
+          subsectionP3: $("#dataset-country").text(),
+          subsectionP4: $("#dataset-year").text(),
+          subsectionP5: $("#dataset-metadata-info").attr("data-idno"),
+      }
+}
+wbgData.site = {
+      pageLoad: "N",
+      siteInfo: {
+          siteLanguage: "en",
+          siteCountry: "",
+          siteEnv: "PROD",
+          siteType: "microdata",
+          siteRegion: "",
+          userIpaddressType: "",
+      },
+      techInfo: {
+          cmsType: "NADA",
+          bussVPUnit: "dec",
+          bussUnit: "decsu",
+          bussUserGroup: "external",
+          bussAgency: "ibrd",
+      }
+  }
+
+</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	_satellite.track("dynamicdata");
+	_satellite.pageBottom();
+});	
+</script>
+
+<script language="JavaScript">
+$(document).ready(function() 
+{	
+	//make all download links open in new 
+	$(".download").attr('target', '_blank');
+	
+	//custom links
+	$(".download").mousedown(function(e) {
+		ss=s_gi(s_account);
+		ss.pageName='download:'+$(this).attr("title");
+		ss.pageURL=$(this).attr("href");
+		ss.events="download";
+		ss.prop2=$("#dataset-metadata-info").attr("data-repositoryid");//repositoryid
+		ss.prop3=$("#dataset-metadata-info").attr("data-id");//dataset-id
+		ss.prop4=$("#dataset-metadata-info").attr("data-idno");//dataset-idno
+		ss.prop5=$("#dataset-country").text();//dataset-country
+		ss.prop6=$("#dataset-year").text();//dataset-year
+		ss.prop12=$(this).attr("data-extension");//file-extension
+		ss.prop22=$(this).attr("data-filename");//file name
+		ss.prop9=$(this).attr("data-dctype");//file type
+		ss.prop33=$(this).attr("href");//download link
+		ss.prop20='download';
+		try{
+			ss.t();
+		}
+		catch(err){
+			console.log(err);
+		}	
+	});
+	
+	$(document).ajaxSend(function(event, request, settings) {		
+
+		var ss_prop1='search';
+		//catalog search
+		if (settings.url.indexOf("catalog/search") != -1) {
+			var pos=settings.url.indexOf("?");
+			if (pos != -1) {
+				ss_prop1=s_repo.concat("> Search " + settings.url.substring(pos) );
+			}
+		}	
+		else {
+				ss_prop1=settings.url;
+		}		
+				
+		ss=s_gi(s_account);
+		ss.pageName=ss_prop1;
+		ss.pageURL=ss_prop1;
+		ss.events="search";
+		try{
+			ss.t();
+		}
+		catch(err){
+			console.log(err);
+		}
+	});
+
+});
+</script>
+
+
+
+
+
+
+</body>
+
+</html>
